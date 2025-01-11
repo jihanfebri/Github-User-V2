@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GithubUser</string>
+    <string name="searchbar">mau cari siapa</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="notFound">Maaf, user yang dicari tidak ada</string>
+</resources>
