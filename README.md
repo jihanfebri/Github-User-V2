@@ -41,20 +41,6 @@
 - Kotlin Coroutines for async operations
 - Retrofit for API calls
 
-## 📱 Screenshots
-
-<div align="center">
-<table>
-<tr>
-<td><strong>Light Theme</strong></td>
-<td><strong>Dark Theme</strong></td>
-</tr>
-<tr>
-<td><em>Add screenshots here</em></td>
-<td><em>Add screenshots here</em></td>
-</tr>
-</table>
-</div>
 
 ## 🛠️ Tech Stack
 
@@ -137,13 +123,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Jihan Febriansyah**
+**Jihan Febriharvianti Wirawan**
 
 [![GitHub](https://img.shields.io/badge/GitHub-jihanfebri-black?logo=github)](https://github.com/jihanfebri)
 
 ---
 <div align="center">
-Made with ❤️ by Jihan Febriansyah
+Made with ❤️ by Jihan Febriharvianti Wirawan
 
 Last updated: January 11, 2025
 </div>
