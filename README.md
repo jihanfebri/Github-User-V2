@@ -1,100 +1,149 @@
-# GitHub User Explorer
+# 🚀 GitHub User Explorer
 
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white)
+<div align="center">
 
-A modern Android application that allows users to explore GitHub profiles and manage their favorite GitHub users. Built with Kotlin and following Android best practices.
+![GitHub User Explorer](app/src/main/res/drawable/launcher_github.png)
 
-## Features
+[![Platform](https://img.shields.io/badge/Platform-Android-green.svg)](https://www.android.com/) 
+[![Kotlin](https://img.shields.io/badge/Kotlin-1.8.0-blue.svg)](https://kotlinlang.org/)
+[![Android Studio](https://img.shields.io/badge/Android%20Studio-2023.1.1-green.svg)](https://developer.android.com/studio)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-- Search GitHub users
-- View detailed user profiles
-- Save favorite users
+*A modern Android application for exploring GitHub users with a beautiful Material Design interface*
+
+[Features](#features) • [Screenshots](#screenshots) • [Installation](#installation) • [Architecture](#architecture) • [Tech Stack](#tech-stack) • [Contributing](#contributing)
+
+</div>
+
+## ✨ Features
+
+🔍 **Advanced Search**
+- Real-time GitHub user search
+- Detailed user profiles with followers and following information
+- Smooth and responsive user interface
+
+❤️ **Favorites System**
+- Save favorite GitHub users locally
+- Quick access to favorite profiles
+- Manage your favorite users list
+
+🎨 **Modern UI/UX**
+- Material Design 3 components
 - Dark/Light theme support
-- Local data persistence
-- Responsive UI design
+- Responsive layout for different screen sizes
+- Smooth animations and transitions
 
-## Tech Stack
+🛠️ **Technical Features**
+- MVVM Architecture
+- Repository Pattern
+- Room Database for local storage
+- ViewBinding for efficient view access
+- Kotlin Coroutines for async operations
+- Retrofit for API calls
 
-- **Language:** Kotlin
-- **Minimum SDK:** 24
-- **Target SDK:** 34
-- **Architecture:** MVVM (Model-View-ViewModel)
+## 📱 Screenshots
 
-### Libraries Used
+<div align="center">
+<table>
+<tr>
+<td><strong>Light Theme</strong></td>
+<td><strong>Dark Theme</strong></td>
+</tr>
+<tr>
+<td><em>Add screenshots here</em></td>
+<td><em>Add screenshots here</em></td>
+</tr>
+</table>
+</div>
 
-- Retrofit2 - REST API client
-- Room Database - Local data persistence
-- Glide - Image loading and caching
-- OkHttp3 - HTTP client
-- ViewBinding - View binding
-- AndroidX Lifecycle - ViewModel and LiveData
-- Circle ImageView - Circular image views
-- ViewPager2 - Swipeable views
-- DataStore Preferences - Key-value data storage
+## 🛠️ Tech Stack
 
-## Getting Started
+- **Language:** [Kotlin](https://kotlinlang.org/)
+- **UI Components:**
+  - Material Design 3
+  - Custom Views
+  - ViewBinding
+  - RecyclerView with DiffUtil
+- **Architecture:**
+  - MVVM (Model-View-ViewModel)
+  - Repository Pattern
+  - Clean Architecture principles
+- **Dependencies:**
+  - AndroidX Libraries
+  - Retrofit2 & OkHttp3 for networking
+  - Room Database for local storage
+  - Glide for image loading
+  - ViewPager2 for swipeable views
+  - Circle ImageView for profile pictures
+- **Other Tools:**
+  - Kotlin Coroutines
+  - Android DataStore
+  - ViewModel & LiveData
 
-### Prerequisites
-
-- Android Studio Arctic Fox or later
-- JDK 8
-- Android SDK 34
-- Kotlin 1.8+
-
-### Installation
+## ⚙️ Installation
 
 1. Clone the repository
-   ```bash
-   git clone [repository-url]
-   ```
-
-2. Open the project in Android Studio
-
-3. Sync project with Gradle files
-
-4. Run the app on an emulator or physical device
-
-## Project Structure
-
-The project follows a clean architecture approach with the following main components:
-
-- `data` - Data layer with repositories and data sources
-- `domain` - Business logic and use cases
-- `ui` - User interface components
-- `utils` - Utility classes and extensions
-
-## Building and Running
-
-The app can be built using Android Studio or through the command line:
-
 ```bash
-./gradlew assembleDebug
+git clone https://github.com/jihanfebri/Github-User-V2.git
 ```
 
-To install and run on a connected device:
+2. Open in Android Studio
+- Open Android Studio
+- Choose "Open an Existing Project"
+- Navigate to the cloned directory
 
-```bash
-./gradlew installDebug
+3. Add GitHub Token
+- Create a `local.properties` file in the root directory
+- Add your GitHub token:
+```properties
+GITHUB_API_KEY=your_github_token_here
 ```
 
-## Contributing
+4. Build and Run
+- Connect your Android device or use an emulator
+- Click the "Run" button (▶️) or press `Shift + F10`
+
+## 🏗️ Architecture
+
+This app follows the MVVM (Model-View-ViewModel) architecture pattern and Repository Pattern:
+
+```
+com.example.githubuser/
+├── data/
+│   ├── response/         # API Response Models
+│   ├── retrofit/         # Network Layer
+│   └── room/            # Local Database
+├── ui/
+│   ├── main/            # Main Screen
+│   ├── detail/          # User Details
+│   ├── favorite/        # Favorites
+│   └── setting/         # App Settings
+└── utils/               # Utility Classes
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how you can help:
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
+## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
+## 👨‍💻 Author
 
-Jihan Febriansyah
+**Jihan Febriansyah**
 
-Project Link: [https://github.com/jihanfebri/Github-User-V2](https://github.com/jihanfebri/Github-User-V2)
+[![GitHub](https://img.shields.io/badge/GitHub-jihanfebri-black?logo=github)](https://github.com/jihanfebri)
 
 ---
+<div align="center">
+Made with ❤️ by Jihan Febriansyah
+
 Last updated: January 11, 2025
+</div>
